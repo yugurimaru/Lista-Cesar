@@ -1,0 +1,77 @@
+inicio
+    inteiro mes , dia
+    repete
+        escrever "Digite o mês: "
+        ler mes
+        escolhe mes
+            caso 0:
+                escrever "Finalizando"
+            caso 1 , 2:
+                escrever "Verão \n"
+            caso 4 , 5:
+                escrever " Outono \n"
+            caso 7 , 8:
+                escrever "Inverno \n"
+            caso 10 , 11:
+                escrever "Primavera \n"
+            caso 3:
+                repete
+                    escrever "Digite o dia do mês: "
+                    ler dia
+                    se dia < 1 ou dia > 31 entao
+                        escrever "Dia inválido \n"
+                    senao
+                        se dia > 21 entao
+                            escrever "Outono \n"
+                        senao
+                            escrever "Verão \n"
+                        fimse
+                    fimse
+                ate dia > 0 e dia < 32
+            caso 6:
+                repete
+                    escrever "Digite o dia do mês: "
+                    ler dia
+                    se dia < 1 ou dia > 30 entao
+                        escrever "Dia inválido \n"
+                    senao
+                        se dia > 21 entao
+                            escrever "Inverno \n"
+                        senao
+                            escrever "Outono \n"
+                        fimse
+                    fimse
+                ate dia > 0 e dia < 31
+            caso 9:
+                repete
+                    escrever "Digite o dia do mês: "
+                    ler dia
+                    se dia < 1 ou dia > 30 entao
+                        escrever "Dia inválido \n"
+                    senao
+                        se dia > 23 entao
+                            escrever "Primavera \n"
+                        senao
+                            escrever "Inverno \n"
+                        fimse
+                    fimse
+                ate dia > 0 e dia < 31
+            caso 12:
+                repete
+                    escrever "Digite o dia do mês: "
+                    ler dia
+                    se dia < 1 ou dia > 31 entao
+                        escrever "Dia inválido \n"
+                    senao
+                        se dia > 21 entao
+                            escrever "Verão \n"
+                        senao
+                            escrever "Primavera \n"
+                        fimse
+                    fimse
+                ate dia > 0 e dia < 32
+            defeito:
+                escrever "Mês inválido \n"
+        fimescolhe
+    ate mes = 0
+fim
